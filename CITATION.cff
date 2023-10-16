@@ -3,7 +3,7 @@
 
 cff-version: 1.2.0
 title: Speckle Sense
-message: App to evaluate speckle pattern quality metrics.
+message: "If you use this software, please cite it as below."
 type: software
 authors:
   - given-names: Joshua
