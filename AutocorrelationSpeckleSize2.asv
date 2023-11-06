@@ -1,0 +1,42 @@
+% Load the speckle pattern image 
+input_image = imread('S.jpg');
+
+% Convert the input image to double precision
+input_image = double(input_image);
+
+% Calculate the autocorrelation function
+[n, m] = size(input_image);
+N = n*m; %Total number of pixels
+autocorr = zeros(1,1000);
+
+image_vect = reshape(input_image,[1,N]);
+image_squared = image_vect.^2; %Formula for autocorrelation
+index = 1; %To fill autocorrelation array
+
+for u = -500:500 %Range of u-values
+
+    image_transformed = circshift(image_vect,u); %Shift elements by u, this is the horizontal transformation
+
+    autocorr(index) = sum((image_vect.*image_transformed))/sum(image_squared);
+
+    index = index + 1;
+
+
+end
+
+% Find the feature size (width) at y = 0.5
+
+
+% Estimate the feature size
+
+
+% Display the autocorrelation function
+u = -500:500;
+figure;
+plot(u,autocorr);
+title('Autocorrelation Function');
+xlabel('Shift (u)');
+ylabel('Normalized Autocorrelation');
+
+% Display the estimated feature size
+%disp(['Estimated Feature Size: ', num2str(feature_size)]);
