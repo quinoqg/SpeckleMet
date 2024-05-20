@@ -417,7 +417,7 @@ classdef SpeckleMet_exported < matlab.apps.AppBase
     methods (Access = public)
 
         % Construct app
-        function app = SpeckleSense_exported
+        function app = SpeckleMet_exported
 
             % Create UIFigure and components
             createComponents(app)
