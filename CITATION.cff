@@ -1,0 +1,15 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Speckle Sense
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - given-names: Joshua
+    family-names: Bobin
+  - given-names: Gustavo
+    family-names: Quino
+    email: me@gquino.com
+    affiliation: Imperial College London
+    orcid: 'https://orcid.org/0000-0002-8249-3712'
