@@ -1,4 +1,4 @@
-classdef SpeckleSense_exported < matlab.apps.AppBase
+classdef SpeckleMet_exported < matlab.apps.AppBase
 
     % Properties that correspond to app components
     properties (Access = public)
